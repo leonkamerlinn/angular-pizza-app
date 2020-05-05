@@ -7,6 +7,6 @@ steps:
       args: ['push', 'gcr.io/tenseconds-b5f56/pizza-app']
     # Deploy image to Cloud Run
     - name: 'gcr.io/cloud-builders/gcloud'
-      args: ['run', 'deploy', 'angular-ssr', '--image', 'gcr.io/tenseconds-b5f56/pizza-app', '--region', 'europe-west1', '--platform', 'managed', '--allow-unauthenticated']
+      args: ['run', 'deploy', 'pizza-app', '--image', 'gcr.io/tenseconds-b5f56/pizza-app', '--region', 'europe-west1', '--platform', 'managed', '--allow-unauthenticated']
 images:
     - gcr.io/tenseconds-b5f56/pizza-app
